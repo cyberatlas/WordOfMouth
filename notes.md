@@ -14,9 +14,7 @@ Resources
 
 [10 Audio Processing Tasks To Get You Started With Deep Learning Applications (With Case Studies)](https://www.analyticsvidhya.com/blog/2018/01/10-audio-processing-projects-applications/)
 
-[How to use WaveNet]
-(https://towardsdatascience.com/how-wavenet-works-12e2420ef386)
+[How to use WaveNet](https://towardsdatascience.com/how-wavenet-works-12e2420ef386)
 
-[Paper that the Project is based off of]
-(https://arxiv.org/pdf/1702.07825.pdf)
+[Paper that the Project is based off of](https://arxiv.org/pdf/1702.07825.pdf)
 
