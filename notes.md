@@ -18,3 +18,6 @@ Resources
 
 [Paper that the Project is based off of](https://arxiv.org/pdf/1702.07825.pdf)
 
+import epitran first before running notebook, PiPy package
+https://pypi.org/project/epitran/
+
