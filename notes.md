@@ -1,6 +1,6 @@
 Plan
 ===
-[ ] Collect large amounts of voice data and clean it
+[ ] Collect large amounts of voice data and clean it <br>
 [ ] Generate a voice model (ideally with Joe Rogan and Morgan Freeman to start) <br>
 [ ] Add text-to-speech synthesis outputting to an `mp3` file <br>
 [ ] Add text-to-speech synthesis using our voice model and output to `mp3` <br>
@@ -15,12 +15,13 @@ Plan
 
 Setup
 ===
-**Pyenv with the latest version of Python**
-> Pyenv allows you to use multiple versions of Python on your system. 
+
+Pyenv with the latest version of Python
+> Pyenv allows you to use multiple versions of Python on your system 
 ---
 
 Install: <br> 
-1. 
+1. Install pyenv <br>
    ```
    curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash 
    ```
@@ -32,19 +33,19 @@ Install: <br>
    ```
    curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | sh
    ```
-2. Show the versions of python that are installed
+2. Show the versions of python that are installed <br>
     ```
     pyenv versions 
     ```
-3. Install the most recent version of python, in this case: 3.7.4
+3. Install the most recent version of python, in this case: 3.7.4 <br>
     ```
     pyenv install 3.7.4
     ```
-4. Install pyenv virtual environments using pyenv-virtualenv
+4. Install pyenv virtual environments using pyenv-virtualenv <br>
     ```
     git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
     ```
-5. Source (restart) your shell
+5. Source (restart) your shell <br>
     If you ar using bash: 
     ```
     source ~/.basrc
@@ -53,8 +54,8 @@ Install: <br>
     ```
     source ~/.zshrc
     ```
-    Look up how to do it for your shell if you are using something else
-6. Make a directory for your virtualenvs, and change into it
+    Look up how to do it for your shell if you are using something else <br>
+6. Make a directory for your virtualenvs, and change into it <br>
     ```
     cd ~ && \
     mkdir virtual_env && \
@@ -84,24 +85,19 @@ Using `pyenv` and `virtualenv` you are able to install packages in the virtual e
 Since you also have Anaconda installed on your computer, you can still use it in the virtualenv
 > Ex: `jupyter-lab` will still open the program in the virtualenv)
 
-Pyenv Github:
-
+Pyenv Github: <br>
 [Pyenv Github](https://github.com/pyenv/pyenv)
 
-List of pyenv commands:
-
+List of pyenv commands: <br>
 [Pyenv Commands](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
 
-Good guide to pyenv: 
-
+Good guide to pyenv: <br>
 [Amaral Lab Guide](https://amaral.northwestern.edu/resources/guides/pyenv-tutorial)
 
-Another Guide to pyenv and virtualenvs
-
+Another Guide to pyenv and virtualenvs: <br>
 [Real Python Guide](https://realpython.com/intro-to-pyenv/)
 
-Pyenv-virtualenv Plugin:
-
+Pyenv-virtualenv Plugin: <br>
 [Pyenv-virtualenv Github](https://github.com/pyenv/pyenv-virtualenv)
 
 Epitran
