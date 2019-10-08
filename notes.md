@@ -2,9 +2,9 @@ Plan
 ===
 [ ] Collect large amounts of voice data and clean it <br>
 [ ] Generate a voice model (ideally with Joe Rogan and Morgan Freeman to start) <br>
-[ ] Add text-to-speech synthesis outputting to an `mp3` file <br>
+[x] Add text-to-speech synthesis outputting to an `mp3` file <br>
 [ ] Add text-to-speech synthesis using our voice model and output to `mp3` <br>
-[ ] Add the ability to parse `.txt` files and use TTS to output an mp3 of the text passed in <br>
+[x] Add the ability to parse `.txt` files and use TTS to output an mp3 of the text passed in <br>
 [ ] Add the ability to parse purely text based `PDF` and store the text <br> 
 [ ] Add the ability to parse text based `PDF` with pictures and use the text with TTS <br> 
 [ ] Using text based `PDF`, add pics with caption to a separate file, number the pics, and replace the pic with number in the `mp3` output so users can easily reference  
@@ -152,6 +152,25 @@ Resources
 
 [Paper that the Project is based off of](https://arxiv.org/pdf/1702.07825.pdf)
 
+[Mimic2](https://github.com/MycroftAI/mimic2)
+
+[Smart speaker guide that could be useful](https://respeaker.io/make_a_smart_speaker/)
+
+
+
+[List of stuff that could be useful](https://www.findbestopensource.com/product/mozilla-tts)
+
+[Wavenet Encoder](https://github.com/r9y9/wavenet_vocoder)
+
+### This is an amazing resource
+[/r/audiomodels](https://www.reddit.com/r/audiomodels/)
+
+### Projects making TTS
+
+[WaveRNN](https://github.com/fatchord/WaveRNN)
+
+[FloWaveNet](https://github.com/ksw0306/FloWaveNet)
+
 # TODO take a look at this. Could be very promising
 
 [Mozilla Text To Speech](https://github.com/mozilla/TTS)
@@ -160,4 +179,22 @@ Resources
 
 [A Test implementation(I think)](https://gist.github.com/erogol/97516ad65b44dbddb8cd694953187c5b)
 
-[List of stuff that could be useful](https://www.findbestopensource.com/product/mozilla-tts)
+[Discussion on using pretrained models](https://discourse.mozilla.org/t/any-step-by-step-how-to-documentation-on-synthesizing-with-a-pre-trained-model/45316)
+
+[Discussion on how to use](https://discourse.mozilla.org/t/how-to-use-the-tts-models/42368)
+
+[Use without a GPU](https://discourse.mozilla.org/t/running-tts-on-constrained-hardware-no-gpu/40603)
+
+[Voice Assistant Guide (Implements Mozilla/TTS)](https://blog.rasa.com/how-to-build-a-voice-assistant-with-open-source-rasa-and-mozilla-tools/)
+
+[Lightning Talk on Mozilla/TTS](https://www.youtube.com/watch?v=Tysf_1Myd9g)
+
+[Has link to collab notebook implementing](https://github.com/mozilla/TTS/issues/272)
+
+[Blog by one of the main devs](http://www.erogol.com/gradual-training-with-tacotron-for-faster-convergence/)
+
+
+This could make our lives a bit easier if we have time at the end
+[Speech to text with deep learning](https://github.com/mozilla/DSAlign)
+
+
