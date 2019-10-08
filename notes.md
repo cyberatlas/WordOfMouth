@@ -152,5 +152,12 @@ Resources
 
 [Paper that the Project is based off of](https://arxiv.org/pdf/1702.07825.pdf)
 
+# TODO take a look at this. Could be very promising
 
+[Mozilla Text To Speech](https://github.com/mozilla/TTS)
 
+[Related to the above, seen it in use](https://github.com/erogol/TTS_experiments)
+
+[A Test implementation(I think)](https://gist.github.com/erogol/97516ad65b44dbddb8cd694953187c5b)
+
+[List of stuff that could be useful](https://www.findbestopensource.com/product/mozilla-tts)
