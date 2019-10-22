@@ -45,7 +45,25 @@ Install: <br>
     ```
     git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
     ```
-5. Source (restart) your shell <br>
+5. Set the proper environment variables
+   ```
+   echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+   ```
+   ```
+   echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+   ```
+  > Zsh note: Modify your ~/.zshenv file instead of ~/.bash_profile.
+  > Ubuntu and Fedora note: Modify your ~/.bashrc file instead of ~/.bash_profile.
+  > Proxy note: If you use a proxy, export http_proxy and HTTPS_PROXY too.
+
+   Add pyenv init to your shell to enable shims and autocompletion. Please make sure eval "$(pyenv init -)" is placed toward the end of the shell configuration file since it manipulates PATH during the initialization.
+   ```
+   echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+   ```   
+  > Zsh note: Modify your ~/.zshenv file instead of ~/.bash_profile.
+  > fish note: Use pyenv init - | source instead of eval (pyenv init -).
+  > Ubuntu and Fedora note: Modify your ~/.bashrc file instead of ~/.bash_profile.
+6. Source (restart) your shell <br>
     If you ar using bash: 
     ```
     source ~/.basrc
@@ -55,7 +73,7 @@ Install: <br>
     source ~/.zshrc
     ```
     Look up how to do it for your shell if you are using something else <br>
-6. Make a directory for your virtualenvs, and change into it <br>
+7. Make a directory for your virtualenvs, and change into it <br>
     ```
     cd ~ && \
     mkdir virtual_env && \
