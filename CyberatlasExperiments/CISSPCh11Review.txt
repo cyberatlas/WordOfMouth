@@ -1,0 +1,143 @@
+The tasks of designing, deploying, and maintaining security on a network require intimate
+knowledge of the technologies involved in networking. This includes protocols, services,
+communication mechanisms, topologies, cabling, endpoints, and networking devices.
+The OSI model is a standard against which all protocols are evaluated. Understanding
+how the OSI model is used and how it applies to real-world protocols can help system
+designers and system administrators improve security. The TCP/IP model is derived directly
+from the protocol and roughly maps to the OSI model.
+
+Most networks employ TCP/IP as the primary protocol. However, numerous subpro-
+tocols, supporting protocols, services, and security mechanisms can be found in a TCP/IP
+
+network. A basic understanding of these various entities can help you when designing and
+deploying a secure network.
+In addition to routers, hubs, switches, repeaters, gateways, and proxies, firewalls are an
+important part of a network’s security. There are several types of firewalls: static packet
+filtering, application-level gateway, circuit-level gateway, stateful inspection, deep-packet
+inspection, and next-gen.
+Converged protocols are common on modern networks, including FCoE, MPLS, VoIP,
+and iSCSI. Software-defined networks and content-distribution networks have expanded
+the definition of network as well as expanded the use cases for it. A wide range of hardware
+components can be used to construct a network, not the least of which is the cabling used
+to tie all the devices together. Understanding the strengths and weaknesses of each cabling
+type is part of designing a secure network.
+
+514 Chapter 11 ■ Secure Network Architecture and Securing Network Components
+
+Wireless communications occur in many forms, including cell phone, Bluetooth
+
+(802.15), RFID, NFC, and networking (802.11). Wireless communication is more vulner-
+able to interference, eavesdropping, denial of service, and man-in-the-middle attacks.
+
+The most common LAN technology is Ethernet. There are also several common network
+topologies: ring, bus, star, and mesh.
+Exam Essentials
+Know the OSI model layers and which protocols are found in each. The seven layers and
+the protocols supported by each of the layers of the OSI model are as follows:
+Application: HTTP, FTP, LPD, SMTP, Telnet, TFTP, EDI, POP3, IMAP, SNMP,
+NNTP, S-RPC, and SET
+Presentation: Encryption protocols and format types, such as ASCII, EBCDICM, TIFF,
+JPEG, MPEG, and MIDI
+Session: NFS, SQL, and RPC
+Transport: SPX, SSL, TLS, TCP, and UDP
+Network: ICMP, RIP, OSPF, BGP, IGMP, IP, IPSec, IPX, NAT, and SKIP
+Data Link: SLIP, PPP, ARP, L2F, L2TP, PPTP, FDDI, ISDN
+Physical: EIA/TIA-232, EIA/TIA-449, X.21, HSSI, SONET, V.24, and V.35
+Have a thorough knowledge of TCP/IP. Know the difference between TCP and UDP; be
+familiar with the four TCP/IP layers (Application, Transport, Internet, and Link) and how
+they correspond to the OSI model. In addition, understand the usage of the well-known
+ports and be familiar with the subprotocols.
+Know the different cabling types and their lengths and maximum throughput rates.
+This includes STP, 10BaseT (UTP), 10Base2 (thinnet), 10Base5 (thicknet), 100BaseT,
+1000BaseT, and fiber-optic. You should also be familiar with UTP categories 1 through 7.
+Be familiar with the common LAN technologies. The most common LAN technology
+is Ethernet. Also be familiar with analog versus digital communications; synchronous vs.
+
+asynchronous communications; baseband vs. broadband communications; broadcast, mul-
+ticast, and unicast communications; CSMA, CSMA/CA, and CSMA/CD; token passing;
+
+and polling.
+Understand secure network architecture and design. Network security should take into
+account IP and non-IP protocols, network access control, using security services and
+devices, managing multilayer protocols, and implementing endpoint security.
+
+Understand the various types and purposes of network segmentation. Network segmenta-
+tion can be used to manage traffic, improve performance, and enforce security. Examples of
+
+network segments or subnetworks include intranet, extranet, and DMZ.
+
+Exam Essentials 515
+
+Understand the different wireless technologies. Cell phones, Bluetooth (802.15), and
+wireless networking (802.11) are all called wireless technologies, even though they are all
+different. Be aware of their differences, strengths, and weaknesses. Understand the basics
+of securing 802.11 networking.
+Understand Fibre Channel. Fibre Channel is a form of network data storage solution (i.e.,
+SAN (storage area network) or NAS (network-attached storage)) that allows for high-speed
+file transfers.
+Understand FCoE. FCoE (Fibre Channel over Ethernet) is used to encapsulate Fibre
+Channel communications over Ethernet networks.
+
+Understand iSCSI. iSCSI (Internet Small Computer System Interface) is a networking stor-
+age standard based on IP.
+
+Understand 802.11 and 802.11a, b, g, n, and ac. 802.11 is the IEEE standard for wireless
+network communications. Versions include 802.11 (2 Mbps), 802.11a (54 Mbps), 802.11b
+(11 Mbps), 802.11g (54 Mbps), 802.11n (600 Mbps), and 802.11ac (1.3+ Mbps). The
+802.11 standard also defines Wired Equivalent Privacy (WEP).
+Understand site survey. A site survey is the process of investigating the presence, strength,
+and reach of wireless access points deployed in an environment. This task usually involves
+walking around with a portable wireless device, taking note of the wireless signal strength,
+and mapping this on a plot or schematic of the building.
+Understand WPA2. WPA2 is a new encryption scheme known as the Counter Mode with
+Cipher Block Chaining Message Authentication Code Protocol (CCMP), which is based on
+the AES encryption scheme.
+Understand EAP. EAP (Extensible Authentication Protocol) is not a specific mechanism
+of authentication; rather it is an authentication framework. Effectively, EAP allows for new
+
+authentication technologies to be compatible with existing wireless or point-to-point con-
+nection technologies.
+
+Understand PEAP. PEAP (Protected Extensible Authentication Protocol) encapsulates
+EAP methods within a TLS tunnel that provides authentication and potentially encryption.
+
+Understand LEAP. LEAP (Lightweight Extensible Authentication Protocol) is a Cisco pro-
+prietary alternative to TKIP for WPA. This was developed to address deficiencies in TKIP
+
+before the 802.11i/WPA2 system was ratified as a standard.
+Understand MAC Filtering. A MAC filter is a list of authorized wireless client interface
+MAC addresses that is used by a wireless access point to block access to all nonauthorized
+devices.
+Understand SSID Broadcast. Wireless networks traditionally announce their SSID on a
+
+regular basis within a special packet known as the beacon frame. When the SSID is broad-
+cast, any device with an automatic detect and connect feature is not only able to see the
+
+network, but it can also initiate a connection with the network.
+
+516 Chapter 11 ■ Secure Network Architecture and Securing Network Components
+
+Understand TKIP. TKIP (Temporal Key Integrity Protocol) was designed as the replace-
+ment for WEP without requiring replacement of legacy wireless hardware. TKIP was imple-
+mented into 802.11 wireless networking under the name WPA (Wi-Fi Protected Access).
+
+Understand CCMP. CCMP (Counter Mode with Cipher Block Chaining Message
+Authentication Code Protocol) was created to replace WEP and TKIP/WPA. CCMP uses
+AES (Advanced Encryption Standard) with a 128-bit key.
+Understand captive portals. A captive portal is an authentication technique that redirects
+a newly connected wireless web client to a portal access control page.
+
+Understand antenna types. A wide variety of antenna types can be used for wireless cli-
+ents and base stations. These include omnidirectional pole antennas as well as many direc-
+tional antennas, such as Yagi, cantenna, panel, and parabolic.
+
+Know the standard network topologies. These are ring, bus, star, and mesh.
+Know the common network devices. Common network devices are firewalls, routers,
+hubs, bridges, modems, repeaters, switches, gateways, and proxies.
+Understand the different types of firewalls. There are several types of firewalls: static
+
+packet filtering, application-level gateway, circuit-level gateway, stateful inspection, deep-
+packet inspection, and next-gen.
+
+Know the protocol services used to connect to LAN and WAN communication technologies.
+These are Frame Relay, SMDS, X.25, ATM, HSSI, SDLC, HDLC, and ISDN.

@@ -4,23 +4,26 @@ import os
 #tts = gTTS(text="Creighton hi you are a bitch!", lang = 'en')
 
 # Open file
-f = open("test.txt", 'r')
+#f = open("CISSPCh11Review.txt", 'r')
+f = open("ch11.txt", 'r')
 # Get the text
 text = f.read()
 # Close the file
 f.close()
 
 genAudio1 = gTTS(text = text, lang = 'en')
-genAudio2 = gTTS(text = text, lang = 'en', slow=True)
+#genAudio2 = gTTS(text = text, lang = 'en', slow=True)
 
  
-genAudio1.save('testv2fast.mp3')
-genAudio2.save('testv2slow.mp3')
+#genAudio1.save('testv2fast.mp3')
+genAudio1.save('ch11Review.mp3')
+#genAudio2.save('testv2slow.mp3')
 
 #tts.save("test.mp3")
+#os.system("vlc testv2fast.mp3")
+#os.system("vlc ch11Review.mp3")
+os.system("vlc ch11.mp3")
 
-os.system("vlc testv2fast.mp3")
+#os.system("gtts-cli 'Break it down now yall!' | vlc - ")
 
-os.system("gtts-cli 'Break it down now yall!' | vlc - ")
-
-os.system("vlc testv2slow.mp3")
+#os.system("vlc testv2slow.mp3")
