@@ -11,7 +11,7 @@ def make_sentences(textin):
     try:
         # Opens the file to write, overrites if exists and creates if it doesn't
         # By using with statements files are automatically closed for us
-        with open("sent.txt", "w+") as sent:
+        with open("WaveRNN/sentences.txt", "w+") as sent:
             for line in textin:
                 sent.write(line)
     except IOError as e:
@@ -51,20 +51,36 @@ def main():
 
     make_sentences(text)
 
+    """
     # Delete sentences.txt if it already exists
-    if os.path.exists("sentences.txt"):
-        os.remove("sentences.txt")
+    if os.path.exists("/WaveRNN/sentences.txt"):
+        os.remove("WaveRNN/sentences.txt")
+    """
 
     # Delete the quick_start dir if exists, does not do anything if it does not
-    os.system("rm -rf quick_start/")
+    os.system("rm -rf WaveRNN/quick_start/")
     
+
+    working_dir = os.getcwd()
+    tmp_dir = working_dir + "/WaveRNN" 
+    os.chdir(tmp_dir)
+    assert(os.getcwd() == tmp_dir), "Issues changing into WaveRNN directory"
+
     # Run wavrnn
-    os.system("python Wavernn/quick_start.py")
-    
-    out_file = file + ".wav"
+    #os.system("python WaveRNN/quick_start.py")
+    try:
+        os.system("python quick_start.py")
+    except:
+        print("isues with wavernn")
+        exit(1)
+
+    os.chdir(working_dir)
+    assert(os.getcwd() == working_dir), "Issues changing from WaveRNN dir to working dir"
+
+    out_file = file[:-4] + ".wav"
     
     # Concatenate the wav files and save as the output file
-    concat_cmd = "sox WaveRNN/quick_start/*wav '" + out_file + "'"
+    concat_cmd = "sox WaveRNN/quick_start/*.wav '" + out_file + "'"
     os.system(concat_cmd)
     
     # TODO output the file to the user
@@ -73,7 +89,7 @@ def main():
 
 
 # TODO could add ability to save as mp3
-# TODO add error checking around the os.system stuff
+# TODO add error checking around the os.sys]tem stuff
 # TODO Add ability to do page range
 # TODO add ability to preview page first
 
