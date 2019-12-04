@@ -152,6 +152,31 @@ Download the audio as mp3
 [Mp3 to WAV Converter](https://audio.online-convert.com/convert-to-wav)<br>
 Download the wav file and save text of it
 
+WaveRNN
+---
+This is the model that is used to generate audio files
+
+Install: <br> 
+1. clone the [WaveRNN Git Repository](https://github.com/fatchord/WaveRNN) while virtualenv is activated
+    ```
+    git clone https://github.com/fatchord/WaveRNN.git
+    ```
+2. Run a test to make sure WaveRNN is working(Optional)
+    ```
+    cd WaveRNN
+    python quick_start.py
+    ```
+This should process a directory "quick start" where the audio files are stored
+3. Download the [LJSpeech Dataset](https://keithito.com/LJ-Speech-Dataset/) and extract files
+    ```
+    tar -xvjf LJSpeech-1.1.tar.bz2
+    ```
+4. Preprocess the dataset
+    ```
+    python preprocess.py --path /path/to/LJSpeech-1.1
+    ```
+5. 
+
 Useful Libraries
 ===
 
