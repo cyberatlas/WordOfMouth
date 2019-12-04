@@ -167,6 +167,7 @@ Install: <br>
     python quick_start.py
     ```
 This should process a directory "quick start" where the audio files are stored
+
 3. Download the [LJSpeech Dataset](https://keithito.com/LJ-Speech-Dataset/) and extract files
     ```
     tar -xvjf LJSpeech-1.1.tar.bz2
