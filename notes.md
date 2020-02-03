@@ -33,6 +33,8 @@ Install: <br>
    ```
    curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | sh
    ```
+   > Note: if you run into issues after this, add pyenv to your PATH
+   
 2. Show the versions of python that are installed <br>
     ```
     pyenv versions 
